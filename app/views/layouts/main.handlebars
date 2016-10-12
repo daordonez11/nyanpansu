@@ -4,16 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <title>{{title }}</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700,700i|Josefin+Sans:700" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="icon" href="images/logo.png">
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   {{#if ENV_DEVELOPMENT}}
     <script src="http://localhost:35729/livereload.js"></script>
   {{/if}}
 </head>
 <body>
-
-
-  {{{body}}}
-
-
+	<div class="container main">
+		<div class="row">
+			<div class="col-md-6">
+				<img class="img-responsive img-rabbit" src="images/533.jpg">
+			</div>
+			{{{body}}}
+		</div>
+	</div>
+	<footer class="text-center">
+            <div class="container bottom">
+                <div class="row">
+                    <div class="col-sm-12">
+                    <p>Made with ♂</p>
+                </div>
+            </div>
+        </div>
+    </footer>
   </body>
 </html>
